@@ -1,0 +1,95 @@
+﻿<Window x:Class="Pinsk.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Background="Black"
+        Title="MainWindow" Height="450" Width="800">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="300"/>
+        </Grid.ColumnDefinitions>
+
+        <Button Grid.Column="1" 
+                Margin="10"
+                Style="{DynamicResource RoundedButtonStyle}">
+
+            <Grid>
+                <Rectangle RadiusX="20" RadiusY="20" Margin="-11,-126,-11,-126">
+                    <Rectangle.Fill>
+                        <ImageBrush ImageSource="View\Images\Nowss.jpg"/>
+                    </Rectangle.Fill>
+                </Rectangle>
+
+                <TextBlock Text="РАНЬШЕ И СЕЙЧАС" 
+                           Foreground="White" 
+                           FontSize="40" 
+                           TextAlignment="Center" 
+                           TextWrapping="Wrap" 
+                           Margin="50,10,49,-10"/>
+            </Grid>
+        </Button>
+
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Button Grid.Row="0" 
+                    Margin="10"
+                    Style="{DynamicResource RoundedButtonStyle}">
+
+                <Grid>
+                    <Rectangle RadiusX="20" RadiusY="20" Margin="-70,-70,-70,-70">
+                        <Rectangle.Fill>
+                            <ImageBrush ImageSource="View\Images\ViewStreat.jpg"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+
+                    <TextBlock Text="ПРОСМОТР УЛИЦ" Foreground="White" FontSize="40"/>
+                </Grid>
+            </Button>
+
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0"
+                        Margin="10"
+                        Style="{DynamicResource RoundedButtonStyle}">
+
+                    <Grid>
+                        <Rectangle RadiusX="20" RadiusY="20" Margin="-70,-70,-70,-70">
+                            <Rectangle.Fill>
+                                <ImageBrush ImageSource="View\Images\TestImage.jpg"/>
+                            </Rectangle.Fill>
+                        </Rectangle>
+
+                        <TextBlock Text="ТЕСТ" Foreground="White" FontSize="40"/>
+                    </Grid>
+                </Button>
+
+                <Button Grid.Column="1" 
+                        Margin="10"
+                        Style="{DynamicResource RoundedButtonStyle}">
+
+                    <Grid>
+                        <Rectangle RadiusX="20" RadiusY="20" Margin="-23,-71,-23,-71">
+                            <Rectangle.Fill>
+                                <ImageBrush ImageSource="View\Images\History.jpg"/>
+                            </Rectangle.Fill>
+                        </Rectangle>
+
+                        <TextBlock Text="ИСТОРИЯ" Foreground="White" FontSize="40"/>
+                    </Grid>
+                </Button>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
